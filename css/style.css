@@ -306,8 +306,8 @@
 }
 
 .testimonial-carousel .owl-item img {
-    width: 150px;
-    height: 150px;
+    height: 600px;
+    width: auto;
 }
 
 

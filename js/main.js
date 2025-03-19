@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 300, 'easeInOutExpo');
         return false;
     });
 
@@ -52,3 +52,11 @@
     
 })(jQuery);
 
+function setActiveLink(element) {
+    // Remove active class from all links
+    document.querySelectorAll('.nav-item.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    // Add active class to clicked link
+    element.classList.add('active');
+}
